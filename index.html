@@ -47,13 +47,13 @@
     <h2>Abstract </h2>
 	      <hr>
         <p>
-            Image denoisers have been shown to be powerful priors for solving inverse problems in imaging. Inthis work, we introduce a generalization of these methods that allows any image restoration network to beused as an implicit prior. The proposed method uses priors specified by deep neural networks pre-trainedas general restoration operators. The method provides a principled approach for adapting state-of-the-artrestoration models for other inverse problems.  Our theoretical result analyzes its convergence to astationary point of a global functional associated with the restoration operator. Numerical results showthat the method using a super-resolution prior achieves state-of-the-art performance both quantitativelyand qualitatively. Overall, this work offers a step forward for solving inverse problems by enabling the useof powerful pre-trained restoration models as priors.
+            Image denoisers have been shown to be powerful priors for solving inverse problems in imaging. In this work, we introduce a generalization of these methods that allows any image restoration network to beused as an implicit prior. The proposed method uses priors specified by deep neural networks pre-trained as general restoration operators. The method provides a principled approach for adapting state-of-the-art restoration models for other inverse problems.  Our theoretical result analyzes its convergence to a stationary point of a global functional associated with the restoration operator. Numerical results showthat the method using a super-resolution prior achieves state-of-the-art performance both quantitativelyand qualitatively. Overall, this work offers a step forward for solving inverse problems by enabling the useof powerful pre-trained restoration models as priors.
     </div>
     <div class="section">
     <h2>DRP for image deblurring</h2>
         <div class="row align-items-center">
 			<div class="col justify-content-center text-center">
-                <img src="img/pmri_hres.gif" style="width:67.5%" alt="Banner">
+                <img src="img/deblur_results.pdf" style="width:90%" alt="Banner">
                 <p style="text-align: justify;"><b>Figure 1:</b> Visual comparison of DRP with several well-known methods on Gaussian deblurring of color images. Note how DRP using restoration prior improvesover SOTA methods based on denoiser priors.</p>
             </div>
         </div>
@@ -62,7 +62,7 @@
 
         <div class="row align-items-center">
 			<div class="col justify-content-center text-center">
-                <img src="img/deconv_hres.gif" style="width:67.5%" alt="Banner">
+                <img src="img/sisr_results.pdf" style="width:90%" alt="Banner">
                 <p style="text-align: justify;"><b>Figure 2:</b> Visual comparison of DRP and several well-known methods on single image super resolution. Note the excellent performance of the proposed DRP method using the SwinIR prior both visually and interms of PSNR.</p>
             </div>
         </div>
@@ -72,7 +72,7 @@
         <hr>
         <div class="row align-items-center">
 			<div class="col justify-content-center text-center">
-                <img src="img/exp_convergence.jpg" style="width:90%" alt="Banner">
+                <img src="img/convergence_curve.pdf" style="width:90%" alt="Banner">
                 <p><b>Figure 3:</b> llustration of the convergence behaviour of DRP for image deblurring and single image superresolution on the Set3c dataset. (a)-(b): Deblurring with Gaussian blur kernels of standard deviations 1.6 and 2.0.(c)-(d):2× and 3× super resolution with the Gaussian blur kernel of standard deviation 2.0. </p>
             </div>
         </div>
@@ -84,7 +84,7 @@
 
         <div class="row align-items-center">
 			<div class="col justify-content-center text-center">
-                <img src="img/exp_pmri.jpg" style="width:90%" alt="Banner">
+                <img src="img/convergence_leave_demo.pdf" style="width:90%" alt="Banner">
                 <p style="text-align: justify;"><b>Figure 4:</b> Illustration of the impact of different SR factors in the prior used within DRP for image deblurring.We show three scenarios: (i) using only 3× prior, (ii) using only 2× prior, and (iii) the use of the prior refinement strategy, which combines both the 2× and 3× priors. Left: Convergence of PSNR against the iteration number for all three configurations. Right: Visual illustration of the final image for each setting.The visual difference is highlighted by the red arrow in the zoom-in box. Note how the reduction of q can lead to about 0.3 dB improvement in the final performance. </p>
             </div>
         </div>
@@ -98,7 +98,7 @@
     <div class="section">
         <div class="row align-items-center">
             <div class="col justify-content-center text-center">
-                <img src="img/exp_deconv_idx12.jpg" style="width:90%" alt="Banner">
+                <img src="img/denoise_0.1_vs_Unet_cbsd68.pdf" style="width:90%" alt="Banner">
                 <p style="text-align: justify;"><b>Figure 6:</b>  llustration of denoising results of DRP on CBSD68 dataset with noise level σ= 0.1. Each image islabeled by its PSNR (dB) with respect to the original image.</p>
             </div>
         </div>
