@@ -73,7 +73,7 @@
         <div class="row align-items-center">
 			<div class="col justify-content-center text-center">
                 <img src="img/exp_convergence.jpg" style="width:90%" alt="Banner">
-                <p><b>Figure 3:</b> llustration of the convergence behaviour of DRP for image deblurring and single image superresolution on the Set3c dataset. (a)-(b): Deblurring with Gaussian blur kernels of standard deviations 1.6 and2.0.(c)-(d):2× and 3× super resolution with the Gaussian blur kernel of standard deviation 2.0. </p>
+                <p><b>Figure 3:</b> llustration of the convergence behaviour of DRP for image deblurring and single image superresolution on the Set3c dataset. (a)-(b): Deblurring with Gaussian blur kernels of standard deviations 1.6 and 2.0.(c)-(d):2× and 3× super resolution with the Gaussian blur kernel of standard deviation 2.0. </p>
             </div>
         </div>
     </div>
@@ -85,13 +85,13 @@
         <div class="row align-items-center">
 			<div class="col justify-content-center text-center">
                 <img src="img/exp_pmri.jpg" style="width:90%" alt="Banner">
-                <p style="text-align: justify;"><b>Figure 4:</b> Illustration of the impact of different SR factors in the prior used within DRP for image deblurring.We show three scenarios: (i) using only3×prior, (ii) using only2×prior, and (iii) the use of thepriorrefinement strategy, which combines both the 2× and 3× priors. Left: Convergence of PSNR against theiteration number for all three configurations.Right: Visual illustration of the final image for each setting.The visual difference is highlighted by the red arrow in the zoom-in box. Note how the reduction ofqcanlead to about 0.3 dB improvement in the final performance. </p>
+                <p style="text-align: justify;"><b>Figure 4:</b> Illustration of the impact of different SR factors in the prior used within DRP for image deblurring.We show three scenarios: (i) using only 3× prior, (ii) using only 2× prior, and (iii) the use of the prior refinement strategy, which combines both the 2× and 3× priors. Left: Convergence of PSNR against the iteration number for all three configurations. Right: Visual illustration of the final image for each setting.The visual difference is highlighted by the red arrow in the zoom-in box. Note how the reduction of q can lead to about 0.3 dB improvement in the final performance. </p>
             </div>
         </div>
     </div>
 
     <div class="section">
-        <h2>BC-PnP for blind image deblurring</h2>
+        <h2>DRP for image denoising</h2>
         <hr>
     </div>
 
@@ -99,7 +99,7 @@
         <div class="row align-items-center">
             <div class="col justify-content-center text-center">
                 <img src="img/exp_deconv_idx12.jpg" style="width:90%" alt="Banner">
-                <p style="text-align: justify;"><b>Figure 6:</b>  Illustration of results from several well-known methods on blind image deblurring with the Gaussian kernel. The squares at the top of each image show the estimated kernels. The quantities in the top-left corner of each image provide RMSE and SSIM values for each method. The squares at the bottom of each image highlight the error and the corresponding zoomed image region. Note how the BC-PnP using a deep denoiser on the unknown kernel significantly outperforms the traditional PnP method and matches the performance of the oracle PnP method that knows the true blur kernel. Note also the effectiveness of BC-PnP for estimating the unknown blur kernel.</p>
+                <p style="text-align: justify;"><b>Figure 6:</b>  llustration of denoising results of DRP on CBSD68 dataset with noise level σ= 0.1. Each image islabeled by its PSNR (dB) with respect to the original image.</p>
             </div>
         </div>
     </div>
